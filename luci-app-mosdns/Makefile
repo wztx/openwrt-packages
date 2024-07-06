@@ -15,6 +15,4 @@ endef
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
-chmod 0755 $(1)/etc/init.d/mosdns
-
 # call BuildPackage - OpenWrt buildroot signature
