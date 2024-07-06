@@ -10,6 +10,4 @@ LUCI_PKGARCH:=all
 
 include $(TOPDIR)/feeds/luci/luci.mk
 
-chmod 0755 $(1)/etc/init.d/luci-app-openvpn-client
-
 # call BuildPackage - OpenWrt buildroot signature
