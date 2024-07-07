@@ -20,6 +20,9 @@ config basic
 	option primary_rgbs_ts '0.1'
 	option primary_rgbs '28,66,188'
 	option bkuse '0'
+	option qos '0'
+	option uhttps '1'
+	option tsoset '1'
 
 config theme
 	option primary_rgbbody '33,45,60'
