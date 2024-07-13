@@ -1,7 +1,0 @@
-domain:bing.com
-domain:live.com
-domain:msn.com
-domain:office.com
-domain:google.com
-domain:android.com
-domain:googleapis.cn

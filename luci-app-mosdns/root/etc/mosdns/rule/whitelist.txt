@@ -1,4 +1,8 @@
+domain:bing.com
+domain:live.com
+domain:msn.com
 domain:ntp.org
+domain:office.com
 domain:qlogo.cn
 domain:qq.com
 domain:redhat.com
