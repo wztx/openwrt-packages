@@ -20,9 +20,10 @@ function index()
 	page.acl_depends = { "luci-app-advancedplus" }
 	
 	entry({"admin","system","advancedplus","advancededit"},cbi("advancedplus/advancededit"),_("Advanced Edit"),10).leaf = true
+	entry({"admin","system","advancedplus","advancedset"},cbi("advancedplus/advancedset"),_("Advanced Setting"),20).leaf = true
+	entry({"admin","system","advancedplus","advancedipk"},cbi("advancedplus/advancedipk", {hideapplybtn=true, hidesavebtn=true, hideresetbtn=true}),_("Loading plugins"),30).leaf = true
 	if nixio.fs.access('/www/luci-static/kucat/css/style.css') then
 	    entry({"admin","system","advancedplus","kucatset"},cbi("advancedplus/kucatset"),_("KuCat Theme Config"),40).leaf = true
-	    entry({"admin", "system","advancedplus","kucatupload"}, form("advancedplus/kucatupload"), _("Desktop background upload"), 80).leaf = true
 	end
 	if nixio.fs.access('/www/luci-static/argon/css/cascade.css') then
 	    entry({"admin", "system", "advancedplus","argon-config"}, form("advancedplus/argon-config"), _("Argon Config"), 50).leaf = true
@@ -31,6 +32,7 @@ function index()
 	    entry({"admin", "system",  "advancedplus","design-config"}, form("advancedplus/design-config"), _("Design Config"), 60).leaf = true
 	end
 	entry({"admin", "system","advancedplus","upload"}, form("advancedplus/upload"), _("Login Background Upload"), 70).leaf = true
+	entry({"admin", "system","advancedplus","kucatupload"}, form("advancedplus/kucatupload"), _("Desktop background upload"), 80).leaf = true
 	
 
 	entry({"admin", "system", "advancedplus", "advancedrun"}, call("advanced_run"))
@@ -51,7 +53,6 @@ end
 
 function advanced_run()
 	local selectipk = luci.http.formvalue('select_ipk')
-	luci.sys.exec("echo  'start' > /tmp/advancedplus.log&&echo  'start' > /tmp/advancedpos")
 	uci:set(name, 'advancedplus', 'select_ipk', selectipk)
 	uci:commit(name)
 	fs.writefile("/tmp/advancedpos","0")
