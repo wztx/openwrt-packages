@@ -1,28 +1,29 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2025-01-20 23:30+0000\n"
-"Last-Translator: Didier Martin <dm.martin@free.fr>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/openwrt/"
-"luciapplicationssnmpd/fr/>\n"
-"Language: fr\n"
+"PO-Revision-Date: 2025-04-03 18:17+0000\n"
+"Last-Translator: João Eduardo Almendra Frias Vieira <joao.f.vieira@gmail.com>"
+"\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/openwrt/"
+"luciapplicationssnmpd/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10-dev\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11-dev\n"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:22
 msgid "Agent settings"
-msgstr "Paramètres des agents"
+msgstr "Definições do agente"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:27
 msgid "AgentX settings"
-msgstr "AgentX paramètres"
+msgstr ""
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:28
 msgid "Delete this section to disable AgentX"
-msgstr "Supprimer cette section pour désactiver AgentX"
+msgstr ""
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:25
 msgid "Eg: UDP:161, or UDP:10.5.4.3:161 to only listen on a given interface"
@@ -30,7 +31,7 @@ msgstr ""
 
 #: applications/luci-app-snmpd/root/usr/share/rpcd/acl.d/luci-app-snmpd.json:3
 msgid "Grant UCI access for luci-app-snmpd"
-msgstr ""
+msgstr "Conceder UCI acesso ao luci-app-snmpd"
 
 #: applications/luci-app-snmpd/htdocs/luci-static/resources/view/snmpd/snmpd.js:40
 msgid "Groups help define access methods"
